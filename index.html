@@ -588,14 +588,12 @@
         btn.classList.remove('loading');
         btn.textContent = 'Acessar Sistema';
 
-        if ((login === 'admin' || login === 'admin@autotrack.com') && pw === '1234') {
+        if ((login === 'admin' || login === 'admin@autotrack.com') && pw === '12345') {
           btn.textContent = '✓ Acesso liberado!';
           btn.style.background = '#2ecc7a';
           setTimeout(() => {
-            alert('✅ Login realizado com sucesso!\n\nRedirecionando para o painel...');
-            btn.textContent = 'Acessar Sistema';
-            btn.style.background = '';
-          }, 800);
+  window.location.href = "https://silasandrade.github.io/Tag-nfc-painel-/";
+}, 800);
         } else {
           err.classList.add('show');
         }
